@@ -1,0 +1,14 @@
+[10-Mar-2017 08:10:47 America/Chicago] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/inova205/public_html/functions.php on line 11
+[10-Mar-2017 08:11:51 America/Chicago] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/inova205/public_html/functions.php on line 11
+[10-Mar-2017 08:12:16 America/Chicago] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, object given in /home/inova205/public_html/functions.php on line 12
+[10-Mar-2017 08:12:37 America/Chicago] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, string given in /home/inova205/public_html/functions.php on line 12
+[10-Mar-2017 08:12:52 America/Chicago] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, object given in /home/inova205/public_html/functions.php on line 12
+[10-Mar-2017 08:13:42 America/Chicago] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/inova205/public_html/functions.php on line 11
+[10-Mar-2017 08:13:53 America/Chicago] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, object given in /home/inova205/public_html/functions.php on line 12
+[10-Mar-2017 08:14:56 America/Chicago] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, object given in /home/inova205/public_html/functions.php on line 12
+[10-Mar-2017 08:15:01 America/Chicago] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, string given in /home/inova205/public_html/functions.php on line 12
+[10-Mar-2017 08:15:02 America/Chicago] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, string given in /home/inova205/public_html/functions.php on line 12
+[10-Mar-2017 08:17:28 America/Chicago] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, string given in /home/inova205/public_html/functions.php on line 12
+[10-Mar-2017 11:18:56] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, string given in /home/inova205/public_html/functions.php on line 12
+[10-Mar-2017 11:19:33] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, string given in /home/inova205/public_html/functions.php on line 12
+[10-Mar-2017 08:20:13 America/Chicago] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/inova205/public_html/functions.php on line 11

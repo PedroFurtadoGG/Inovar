@@ -1,0 +1,63 @@
+.accordion-rn {
+  .panel {
+    box-shadow: none;
+  }
+  .panel-heading {
+    padding: 0;
+    .panel-title {
+      a {
+        background: $color-1;
+        border: 2px solid $color-1;
+        padding: 12px 25px 12px 15px;
+        display: block;
+        position: relative;
+        &:hover, &:focus {
+          color: #111;
+        }
+        &:after {
+          @include font-awesome;
+          font-weight: 700;
+          content: "\f106";
+          position: absolute;
+          top: 12px;
+          right: 15px;
+          @extend %transit;
+        }
+      }
+      .collapsed {
+        color: #111;
+        border-color: #eee;
+        background-color: transparent;
+        &:after {
+          @include rotate(180deg)
+        }
+      }
+    }
+
+  }
+  .panel-body {
+    border-top: none;
+    border: 2px solid $color-1;
+    border-top: none;
+  }
+}
+
+#accordion-faq {
+  margin: 35px 0px 50px;
+  .panel-title a {
+    &:before {
+      content: "\f0ad";
+      @include font-awesome;
+      font-size: 12px;
+      margin-right: 5px;
+      color: #111;
+    }
+    &.collapsed:before {
+      color: $color-1;
+    }
+  }
+  .panel-body {
+    color: #777;
+    padding: 40px 30px;
+  }
+}

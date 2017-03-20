@@ -1,0 +1,124 @@
+.footer {
+  position: relative;
+  padding: 70px 0;
+  background: url("../images/page-home/footer-bg.jpg");
+  a, p, li, div {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(17, 17, 17, 0.9);
+  }
+  .widget-tittle {
+    position: relative;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #fff;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+    overflow: hidden;
+    &:before, &:after {
+      content: '';
+      height: 2px;
+      position: absolute;
+      bottom: 0;
+      background: $color-1;
+    }
+    &:before {
+      width: 20px;
+      left: 0;
+    }
+    &:after {
+      width: 100%;
+      left: 30px;
+    }
+  }
+
+  &-about {
+    p {
+      margin-bottom: 25px;
+      line-height: 2;
+    }
+  }
+
+  &-infomation {
+    li {
+      display: inline-block;
+      width: 50%;
+      margin-right: -3px;
+      margin-bottom: 10px;
+    }
+    a {
+      &:before {
+        content: "\f105";
+        margin-right: 10px;
+        @include font-awesome;
+      }
+      &:hover {
+        color: $color-1;
+      }
+    }
+  }
+
+  &-info {
+    li {
+      margin-bottom: 10px;
+    }
+    i {
+      font-size: 16px;
+      width: 35px;
+    }
+  }
+
+  .social-menu {
+    left: 0;
+    right: auto;
+    padding-right: 0;
+    padding-left: 15%;
+    .menu {
+      &:before {
+        border-width: 25px 0px 25px 15px;
+        border-left-color: $color-1;
+        right: auto;
+        left: 0;
+      }
+      li {
+        padding: 15px 15px 15px 30px;
+        &:before {
+          border-width: 25px 0px 25px 15px;
+          left: 1px;
+          border-left-color: rgba(255,255,255,0.2);
+        }
+        &:after {
+          border-width: 25px 0px 25px 15px;
+          border-left-color: $color-1;
+          left: 100%;
+          z-index: 2;
+        }
+        &:hover::after {
+          border-left-color: #111;
+        }
+      }
+    }
+  }
+
+}
+
+.copyright {
+  text-align: center;
+  color: rgba(255,255,255,0.6);
+  background: #111;
+  padding: 50px 0px 45px;
+  a {
+    color: rgba(255,255,255,0.6);
+    &:hover {
+      color: $color-1;
+    }
+  }
+}

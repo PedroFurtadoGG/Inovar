@@ -1,0 +1,155 @@
+/* ------- Fillter - in Page-shop ------- */
+.products-result-count {
+  color: #777;
+}
+.products-ordering {
+  margin-bottom: 30px;
+  label {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-right: 10px;
+    margin-bottom: 0;
+  }
+  select {
+    width: auto;
+    vertical-align: middle;
+    padding: 5px 10px;
+    border: 2px solid #ddd;
+    margin-bottom: 5px;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .products-result-count {
+    margin-bottom: 30px;
+  }
+}
+
+/* ------- Grid Products ------- */
+.star-rating {
+  position: relative;
+  width: 5em;
+  height: 15px;
+  overflow: hidden;
+  line-height: 1;
+  margin: 5px 0px;
+  .products.grid-layout & {
+    margin: 5px auto;
+  }
+  &:before {
+    content: "\f005\f005\f005\f005";
+    color: $color-1;
+    top: 0;
+    left: 0;
+    position: absolute;
+    @include font-awesome;
+  }
+  span:before {
+    @include font-awesome;
+    content: '\f005\f005\f005\f005\f005';
+    color: #eee;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+}
+
+.amount {
+  color: #777;
+  font-weight: 700;
+  del & {
+    margin-right: 5px;
+    font-size: 13px;
+    font-weight: 400;
+  }
+  ins & {
+    color: #d90000;
+  }
+}
+
+.product {
+  text-align: center;
+  margin-bottom: 50px;
+  h3 {
+    margin: 15px 0px 5px;
+  }
+}
+.product-thumb {
+  position: relative;
+  max-width: 300px;
+  margin: 0 auto;
+  img {
+    border: 1px solid #eee;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+.product-title {
+  font-size: 15px;
+  text-transform: capitalize;
+}
+
+.onsale {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  position: absolute;
+  top: 20px;
+  left: 15px;
+  color: #fff;
+  background-color: $color-2;
+  border-radius: 100%;
+  z-index: 0;
+}
+
+@include media-breakpoint-up(md) {
+  .product-thumb img {
+    margin-bottom: 0;
+  }
+  .cart-button {
+    position: absolute;
+    width: 130px;
+    padding: 12px 17px;
+    z-index: 2;
+    position          : absolute;
+    top               : 50%;
+    left              : 50%;
+    -webkit-transform : translate(-50%, -50%) scale(0);
+    transform         : translate(-50%, -50%) scale(0);
+  }
+  .product-thumb_link:before {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    bottom: 1px;
+    left: 1px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+    @extend %transit;
+  }
+  .product {
+    &:hover {
+      .product-thumb_link:before {
+        opacity: 0.8;
+        visibility: visible;
+      }
+      .cart-button {
+        -webkit-transform : translate(-50%, -50%) scale(1);
+        transform         : translate(-50%, -50%) scale(1);
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.btn {
+  text-transform: uppercase;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 700;
+  color: #111;
+  background: $color-1;
+  padding: 11px 17px;
+  display: inline-block;
+  border-radius: 0;
+  i {
+    margin-left: 5px;
+  }
+  &:hover {
+    color: #fff;
+    background: #111;
+  }
+}

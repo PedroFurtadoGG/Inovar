@@ -1,0 +1,35 @@
+.choose-us {
+  background: #111;
+  padding: 80px 0px 50px;
+  margin-top: -29px;
+  h2 {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 36px;
+    margin-bottom: 20px;
+    span {
+      text-transform: uppercase;
+      font-size: 22px;
+      color: $color-1;
+      display: block;
+    }
+  }
+  p {
+    color: #777;
+    line-height: 1.8;
+  }
+  .hotline {
+    &:before {
+      background: #fff;
+    }
+    h3 {
+      color: #111;
+    }
+    p {
+      color: $color-1;
+    }
+  }
+  .service-list_item-categories a {
+    color: #fff;
+  }
+}

@@ -1,0 +1,18 @@
+.big-title {
+  background: #111;
+  margin-bottom: 70px;
+  h2 {
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #fff;
+    padding: 80px 0px;
+  }
+  .page-contact-layout-01 &,
+  .page-projects-fullwidth &,
+  .page-projects-3columns &,
+  .page-projects-basic &,
+  .page-projects-sidebar & {
+    margin-bottom: 0;
+  }
+}

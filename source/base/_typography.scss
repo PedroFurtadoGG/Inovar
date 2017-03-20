@@ -1,0 +1,23 @@
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  letter-spacing: 0em;
+}
+
+p {
+  color: #666;
+}
+
+blockquote {
+  border: 2px solid $color-1;
+  font-size: 18px;
+  padding: 20px;
+  color: rgba(0, 0, 0, 0.7);
+  margin: 10px 0px 20px;
+}

@@ -1,0 +1,129 @@
+/* ------------- CHECKOUT --------------- */
+.page-shop-checkout {
+  .btn {
+    padding: 11px 17px;
+  }
+  .required {
+    color: red;
+  }
+  .heading-title {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  table {
+    margin-bottom: 30px;
+  }
+}
+.checkout-login {
+  .btn {
+    margin: 0px 10px 10px 0px;
+  }
+  p {
+    color: #777;
+    &.lost_password a {
+      color: #111;
+      font-weight: 400;
+    }
+  }
+}
+.checkout-coupon {
+  margin-bottom: 50px;
+}
+.checkout-login, .checkout-coupon {
+  a {
+    color: $color-1;
+    font-weight: 700;
+  }
+  form {
+    border: 1px solid #d3ced2;
+    padding: 20px;
+  }
+}
+
+.billing {
+  margin-bottom: 50px;
+  .checkbox {
+    display: inline-block;
+  }
+  .input-checkbox {
+    margin: 15px 10px 0px 0px;
+  }
+}
+
+.ship-different {
+  margin-bottom: 50px;
+  .custom-heading h3 {
+    a:hover {
+      color: #111;
+    }
+    input[type="checkbox"] {
+      margin-top: 7px;
+      margin-right: 10px;
+    }
+    label {
+      margin-bottom: 0;
+      cursor: pointer;
+      display: inline;
+    }
+  }
+}
+
+.table-order-review {
+  width: 100%;
+  th, td {
+    width: 50%;
+  }
+  th {
+    padding: 10px 20px;
+    color: #fff;
+    background: $color-1;
+  }
+  td {
+    padding: 20px;
+    font-weight: 600;
+    border-bottom: 1px solid #eee;
+  }
+}
+
+.checkout-payment {
+  margin-bottom: 40px;
+  input[type="radio"],input[type="checkbox"] {
+    margin-top: 5px;
+    margin-right: 15px;
+  }
+  .payment_methods {
+    .parent {
+      margin: 30px 0px;
+      padding: 0px 15px;
+    }
+    label {
+      display: inline;
+      text-transform: uppercase;
+      img {
+        width: 150px;
+        margin-left: 5px;
+      }
+    }
+    .panel-collapse {
+      margin-left: 30px;
+    }
+  }
+  .place-order {
+    padding: 15px;
+    border-top: 1px solid #eee;
+    label {
+      display: inline-block;
+      margin: 0;
+    }
+    input[type="checkbox"] {
+      margin: 13px 15px 0px 5px;
+    }
+  }
+}
+
+/* ------------- MY ACCOUNT --------------- */
+.form-login {
+  border: 1px solid #ddd;
+  padding: 30px 20px;
+  margin: 40px 0px 70px 0px;
+}

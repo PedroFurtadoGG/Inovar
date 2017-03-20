@@ -1,0 +1,130 @@
+.we-are {
+  .heading-title {
+    margin-bottom: 30px;
+  }
+  p {
+    margin-bottom: 22px;
+  }
+  img {
+    position: relative;
+    z-index: 1;
+  }
+  .page-home03 & {
+    .btn {
+      margin-right: 10px;
+      margin-bottom: 30px;
+    }
+    img {
+      margin-top: 30px;
+    }
+  }
+}
+
+/* ---------- We-are-layout1 ----------- */
+.we-are-layout1 {
+  position: relative;
+  overflow: hidden;
+  padding: 40px 20px;
+  .col-lg-6 {
+    background: #fff;
+    padding: 20px;
+  }
+  li {
+    vertical-align: top;
+    padding: 0 12px;
+    margin-bottom: 20px;
+    border-left: 3px solid $color-1;
+    color: #777;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .we-are-layout1 {
+    .col-lg-6 {
+      padding: 70px 20px;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .we-are-layout1 {
+    padding: 0;
+    &:before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      background: url("../images/page-home/home01_projects_bg-left.jpg") center left no-repeat;
+      z-index: -2;
+    }
+    .col-lg-6 {
+      padding: 70px 0;
+      &:before, &:after {
+        content: '';
+        position: absolute;
+        height: 50%;
+        width: 160%;
+        background: #fff;
+        left: -130px;
+        z-index: -1;
+      }
+      &:before {
+        top: 0;
+        @include skew(-30deg,0);
+      }
+      &:after {
+        bottom: 0;
+        @include skew(30deg,0);
+      }
+    }
+    li {
+      display: inline-block;
+      width: 50%;
+      margin-right: -3px;
+      vertical-align: top;
+      padding: 0 12px;
+      margin-bottom: 20px;
+      border-left: 3px solid $color-1;
+    }
+  }
+}
+
+/* ---------- We-are-layout2 ----------- */
+.we-are-layout2 {
+  &_pro {
+    padding: 80px 15px 30px;
+    background: url("../images/page-home/home02_section1_bg.png") center center;
+  }
+  &_call {
+    background: $color-1;
+    max-width: 470px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+    h2 {
+      font-size: 23px;
+      border-bottom: 1px solid #e6c109;
+      padding: 10px 0px 30px;
+      margin-bottom: 30px;
+    }
+    .btn {
+      background: #111;
+      color: $color-1;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .we-are-layout2 {
+    &_call {
+      background: $color-1;
+      img {
+        position: relative;
+        z-index: 99;
+        margin-top: -40px;
+      }
+    }
+  }
+}

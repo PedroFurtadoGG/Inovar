@@ -1,0 +1,30 @@
+.heading-title {
+  font-size: 32px;
+  line-height: 1.2;
+  text-transform: capitalize;
+  color: #111;
+
+  .services &,
+  .contact-form & {
+    color: #fff;
+  }
+
+  .our-works & {
+    font-size: 36px;
+  }
+
+  .page-home03 & {
+    color: #111;
+  }
+}
+
+.section-heading {
+  margin-bottom: 35px;
+  .page-home03 .services & {
+    margin-bottom: 60px;
+  }
+  h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+}

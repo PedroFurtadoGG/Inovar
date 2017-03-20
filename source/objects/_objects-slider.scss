@@ -1,0 +1,13 @@
+.tp-bullets {
+  width: 110px !important;
+}
+.tp-bullet {
+  width: 30px !important;
+  height: 5px !important;
+  background: rgba(125, 125, 125, 0.5) !important;
+}
+
+.custom .tp-bullet:hover, .custom .tp-bullet.selected {
+  background: #fff !important;
+
+}

@@ -1,0 +1,71 @@
+/* ---------- Project-fullwidth ----------- */
+.page-projects-fullwidth {
+  .site-content {
+    background: #111;
+  }
+}
+
+/* ---------- Project-basic, 3columns, sidebar ----------- */
+.page-projects-basic,
+.page-projects-3columns,
+.page-projects-sidebar {
+  .site-content {
+    background: #111;
+  }
+  .content {
+    background: #fff;
+    padding: 50px 0px;
+    .col-xs-12 {
+      padding: 0;
+    }
+  }
+
+  .element-item {
+    width: 100%;
+    padding: 15px;
+    .grid-overlay {
+      position: relative;
+      text-align: left;
+      display: block;
+      background: #fff;
+    }
+  }
+  .grid-overlay {
+    &-tittle {
+      color: #111;
+      font-size: 20px;
+      margin: 20px 0px 15px;
+    }
+    &-description {
+      color: #888;
+      font-size: 15px;
+      line-height: 27px;
+      margin-bottom: 20px;
+    }
+    &-readmore {
+      color: $color-1;
+      font-size: 15px;
+      font-weight: 700;
+      text-transform: capitalize;
+    }
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .page-projects-basic,
+  .page-projects-3columns,
+  .page-projects-sidebar {
+    .element-item {
+      width: calc(100%/2);
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .page-projects-basic,
+  .page-projects-3columns {
+    .element-item {
+      width: calc(100%/3);
+    }
+  }
+}

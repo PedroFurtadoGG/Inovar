@@ -1,0 +1,67 @@
+/* ----- Brand home01 ----- */
+.brand {
+  padding: 50px 0;
+}
+
+.brand-item {
+  border: 2px solid #ddd;
+  position: relative;
+  &:hover {
+    border-color: $color-1;
+    .brand-item-overlay {
+      top: 0;
+    }
+    .brand-item-element {
+      opacity: 1;
+      font-size: 14px;
+    }
+  }
+}
+
+.brand-item-element {
+  opacity: 0;
+  font-size: 0;
+  font-weight: 700;
+  text-align: center;
+  @include is-translated;
+  @extend %transit;
+}
+
+.brand-item-overlay {
+  position: absolute;
+  top: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255,255,255,0.85);
+  @extend %transit;
+}
+
+/* ----- Brand home02 ----- */
+.brand-2 {
+  .page-home03 & {
+    padding: 50px 0 70px;
+  }
+  li {
+    float: left;
+    max-width: 180px;
+    width: calc(100%/3 - 10px);
+    padding: 5px;
+    margin: 3px;
+  }
+}
+
+/* ----- testi-brand ----- */
+.testi-brand {
+  padding: 50px 0px;
+  .heading-title {
+    margin: 20px 0px 40px;
+  }
+  blockquote {
+    margin-top: 5px;
+  }
+  .testimonial, .brand-2 {
+    margin-bottom: 30px;
+  }
+}
+

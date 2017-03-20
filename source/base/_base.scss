@@ -1,0 +1,26 @@
+/* ---------------------
+  01-01. Normalize
+--------------------- */
+@import "normalize";
+a {
+  text-decoration : none;
+  color: #111;
+  @extend %transit;
+  &:hover {
+    color: $color-1;
+  }
+}
+
+button {
+  outline: none;
+}
+
+/* ---------------------
+  01-02. Typography
+--------------------- */
+@import "typography";
+
+/* ---------------------
+  01-03. List
+--------------------- */
+@import "lists";

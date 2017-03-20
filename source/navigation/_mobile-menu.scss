@@ -1,0 +1,27 @@
+//Mobile Menu
+
+#primary-menu-mobile {
+  a {
+    color: #111;
+    &:hover {
+      color: $color-1;
+    }
+  }
+  .social-menu-mobile {
+    font-size: 18px !important;
+    line-height: 24px;
+  }
+  .mm-navbar {
+    text-align: center;
+  }
+  .mm-navbar-content-4 > .social-menu-mobile {
+    width: auto;
+    display: inline-block;
+    float: none;
+    margin: 0px 10px;
+  }
+  .mm-close {
+    font-size: 18px;
+    font-weight: 700;
+  }
+}

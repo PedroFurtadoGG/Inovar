@@ -1,0 +1,16 @@
+.new-tips {
+  background: url("../images/page-home/home02_new_bg.jpg") center center;
+  padding-bottom: 20px;
+  padding-top: 50px;
+  &_title {
+    h2 {
+      margin-bottom: 10px;
+    }
+    p {
+      margin-bottom: 35px;
+    }
+  }
+  .page-home02 {
+    margin-top: 30px;
+  }
+}
